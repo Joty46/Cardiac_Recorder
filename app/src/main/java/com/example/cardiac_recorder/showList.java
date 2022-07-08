@@ -52,7 +52,7 @@ public class showList extends RecyclerView.Adapter<showList.ViewHolder> {
         private TextView time;
         private TextView syspr;
         private TextView diaspr;
-        
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             date=itemView.findViewById(R.id.date);

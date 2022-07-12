@@ -1,6 +1,8 @@
 package com.example.cardiac_recorder;
 
-public class Measurement {
+import java.io.Serializable;
+
+public class Measurement implements Serializable {
 
     private String date;
     private String time;

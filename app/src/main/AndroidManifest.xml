@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Cardiac_Recorder"
         tools:targetApi="31">
         <activity
+            android:name=".ConditionDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddMeasurement"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

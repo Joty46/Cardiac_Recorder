@@ -9,15 +9,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/measurement"
         android:layout_width="406dp"
-        android:layout_height="539dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="405dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listtitle" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/listtitle"
@@ -28,7 +26,23 @@
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_msr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#00FF38"
+        android:text="Add Measurement"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

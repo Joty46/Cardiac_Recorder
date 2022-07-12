@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Taslima Joty/Documents/3-1Documents/Lab/SoftwareProject/Cardiac_Recorder/app/src/main/res/drawable-v24/ic_icon.xml" value="0.1055" />
-        <entry key="..\:/Users/Taslima Joty/Documents/3-1Documents/Lab/SoftwareProject/Cardiac_Recorder/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
-        <entry key="..\:/Users/Taslima Joty/Documents/3-1Documents/Lab/SoftwareProject/Cardiac_Recorder/app/src/main/res/layout/showlist.xml" value="0.15" />
-        <entry key="..\:/Users/Taslima Joty/Documents/3-1Documents/Lab/SoftwareProject/Cardiac_Recorder/app/src/main/res/menu/example_menu.xml" value="0.19895833333333332" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/drawable/curved_edge_box_for_background.xml" value="0.2425" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/layout/activity_add_measurement.xml" value="0.22239583333333332" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/layout/activity_condition_details.xml" value="0.22239583333333332" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/layout/activity_splash_screen.xml" value="0.146875" />
+        <entry key="..\:/3-1/Lab/CSE_3120_(Software)/Cardiac_Recorder/app/src/main/res/layout/showlist.xml" value="0.19410004275331338" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

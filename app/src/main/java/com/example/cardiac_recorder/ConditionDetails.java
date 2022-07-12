@@ -17,20 +17,20 @@ public class ConditionDetails extends AppCompatActivity {
         Intent intent = getIntent();
         Measurement m = (Measurement) intent.getSerializableExtra("data");
 
-        TextView date, time, sys_pr, dias_pr, hrt_rate, comment;
+        EditText date, time, sys_pr, dias_pr, hrt_rate, comment;
 
         date = findViewById(R.id.edit_date);
         time = findViewById(R.id.edit_time);
         sys_pr = findViewById(R.id.edit_sys_pr);
         dias_pr = findViewById(R.id.edit_dias_pr);
-        hrt_rate = findViewById(R.id.edit_heat_rate);
+        hrt_rate = findViewById(R.id.edit_heart_rate);
         comment = findViewById(R.id.edit_comment);
 
         date.setText(m.getDate());
         time.setText(m.getTime());
-        sys_pr.setText(Integer.toString(m.getSystolicPressure()));
-        dias_pr.setText(Integer.toString(m.getDiastolicPressure()));
-        hrt_rate.setText(Integer.toString(m.getHeartRate()));
+        sys_pr.setText(String.valueOf(m.getSystolicPressure()));
+        dias_pr.setText(String.valueOf(m.getDiastolicPressure()));
+        hrt_rate.setText(String.valueOf(m.getHeartRate()));
         comment.setText(m.getComment());
     }
 }

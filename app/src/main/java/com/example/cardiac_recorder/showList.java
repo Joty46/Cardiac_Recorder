@@ -2,7 +2,6 @@ package com.example.cardiac_recorder;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +42,7 @@ public class showList extends RecyclerView.Adapter<showList.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, ConditionDetails.class);
-                intent.putExtra("data", (Parcelable) MeasurementList.get(holder.getAdapterPosition()));
+                intent.putExtra("data", MeasurementList.get(holder.getAdapterPosition()));
                 context.startActivity(intent);
             }
         });
@@ -75,5 +74,5 @@ public class showList extends RecyclerView.Adapter<showList.ViewHolder> {
             parent = itemView.findViewById(R.id.measurelist);
         }
     }
-
 }
+

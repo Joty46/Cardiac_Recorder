@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -31,12 +30,12 @@ public class ConditionDetails extends AppCompatActivity {
 
         EditText date, time, sys_pr, dias_pr, hrt_rate, comment;
 
-        date = findViewById(R.id.edit_date);
-        time = findViewById(R.id.edit_time);
-        sys_pr = findViewById(R.id.edit_sys_pr);
-        dias_pr = findViewById(R.id.edit_dias_pr);
-        hrt_rate = findViewById(R.id.edit_heart_rate);
-        comment = findViewById(R.id.edit_comment);
+        date = findViewById(R.id.cddate);
+        time = findViewById(R.id.cdtime);
+        sys_pr = findViewById(R.id.cdsyspr);
+        dias_pr = findViewById(R.id.cddiaspr);
+        hrt_rate = findViewById(R.id.cdheartrate);
+        comment = findViewById(R.id.cdcomment);
         button_delete=findViewById(R.id.button_delete);
         button_edit=findViewById(R.id.button_edit);
 

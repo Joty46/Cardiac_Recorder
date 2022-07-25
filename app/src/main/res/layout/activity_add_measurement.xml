@@ -36,19 +36,20 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="448dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/curved_edge_box_for_background"
         android:backgroundTint="#0051B0"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.498">
 
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_height="48dp"
             android:layout_marginStart="12dp"
             android:text="Date:"
             android:textColor="#FFFFFF"
@@ -62,8 +63,8 @@
         <EditText
             android:id="@+id/edit_date"
             android:layout_width="323dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="59dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
             android:backgroundTint="@color/white"
             android:inputType="date"
             android:textColor="#FFFFFF"
@@ -71,7 +72,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.056" />
+            app:layout_constraintVertical_bias="0.04" />
 
         <TextView
             android:id="@+id/time"
@@ -91,7 +92,7 @@
         <EditText
             android:id="@+id/edit_time"
             android:layout_width="320dp"
-            android:layout_height="32dp"
+            android:layout_height="48dp"
             android:layout_marginStart="64dp"
             android:backgroundTint="@color/white"
             android:inputType="time"
@@ -100,7 +101,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.233" />
+            app:layout_constraintVertical_bias="0.197" />
 
         <TextView
             android:id="@+id/sys_pr"
@@ -120,8 +121,8 @@
         <EditText
             android:id="@+id/edit_sys_pr"
             android:layout_width="104dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="176dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="180dp"
             android:backgroundTint="@color/white"
             android:inputType="number"
             android:textColor="#FFFFFF"
@@ -129,13 +130,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.405" />
+            app:layout_constraintVertical_bias="0.378" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="84dp"
             android:layout_height="32dp"
-            android:layout_marginStart="279dp"
+            android:layout_marginStart="292dp"
             android:layout_marginTop="2dp"
             android:text="mm Hg"
             android:textColor="#FFFFFF"
@@ -144,7 +145,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.401" />
+            app:layout_constraintVertical_bias="0.4" />
 
         <TextView
             android:id="@+id/dias_pr"
@@ -164,8 +165,8 @@
         <EditText
             android:id="@+id/edit_dais_pr"
             android:layout_width="102dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="185dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="188dp"
             android:backgroundTint="@color/white"
             android:inputType="number"
             android:textColor="#FFFFFF"
@@ -173,13 +174,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.576" />
+            app:layout_constraintVertical_bias="0.551" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="32dp"
-            android:layout_marginStart="287dp"
+            android:layout_marginStart="292dp"
             android:text="mm Hg"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
@@ -187,7 +188,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.576" />
+            app:layout_constraintVertical_bias="0.569" />
 
         <TextView
             android:id="@+id/heat_rate"
@@ -207,8 +208,8 @@
         <EditText
             android:id="@+id/edit_heat_rate"
             android:layout_width="110dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="116dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="121dp"
             android:layout_marginTop="25dp"
             android:backgroundTint="@color/white"
             android:inputType="number"
@@ -223,7 +224,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="32dp"
-            android:layout_marginStart="227dp"
+            android:layout_marginStart="237dp"
             android:layout_marginTop="25dp"
             android:text=" bpm"
             android:textColor="#FFFFFF"
@@ -252,8 +253,8 @@
         <EditText
             android:id="@+id/edit_comment"
             android:layout_width="266dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="108dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="114dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/white"
             android:textColor="#FFFFFF"

@@ -3,7 +3,9 @@ package com.example.cardiac_recorder;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
+/**
+ * Consists of all the functions required for Unit Test
+ */
 public class MeasurementDataTest {
     private MeasurementData mockList()
     {
@@ -16,7 +18,9 @@ public class MeasurementDataTest {
         return new Measurement("23/07/2022","11:47am",120,80,60,"normal");
     }
 
-
+    /**
+     * Adds a measurement data in the Recyclerview and check if it is added or not
+     */
     @Test
     public void testAdd()
     {
@@ -29,7 +33,9 @@ public class MeasurementDataTest {
         assertEquals(2,DataList.getMeasure().size());
         assertTrue(DataList.getMeasure().contains(m));
     }
-
+    /**
+     * Throws an exception for testAdd() function
+     */
     @Test
     public void testAddException()
     {
@@ -39,7 +45,9 @@ public class MeasurementDataTest {
         });
     }
 
-
+    /**
+     * Gets the data for a particular item from the Recyclerview
+     */
 
     @Test
     public void testGetMeasure()
@@ -53,7 +61,9 @@ public class MeasurementDataTest {
         assertEquals(0, measure.compareTo(DataList.getMeasure().get(1)));
         assertEquals(0, mockMeasure().compareTo(DataList.getMeasure().get(0)));
     }
-
+    /**
+     * Deletes a measurement data from the Recyclerview and checks if it's deleted or not
+     */
     @Test
     public void testDelete()
     {
@@ -65,6 +75,9 @@ public class MeasurementDataTest {
         assertFalse(mList.getMeasure().contains(measure));
 
     }
+    /**
+     * Throws an exception for testDelete() function
+     */
     @Test
     public void testDeleteException()
     {
@@ -74,7 +87,9 @@ public class MeasurementDataTest {
             mList.delete(measure);
         });
     }
-
+    /**
+     * Edits a measurement data in the Recyclerview and check if it's edited or not
+     */
     @Test
     public void testEdit()
     {

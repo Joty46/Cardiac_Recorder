@@ -24,7 +24,9 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
 
-
+/**
+ * Consists of all the functions required for UI Test
+ */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class MainActivityTest {
@@ -35,10 +37,16 @@ public class MainActivityTest {
     public ActivityScenarioRule<MainActivity> activityRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
+    /**
+     * Checks the application name matching or not
+     */
     @Test
     public void test1checkappname(){
         onView(withText("CardiacRecorder")).check(matches(isDisplayed()));
     }
+    /**
+     * Checks the User Interface and all the functionalities required to Add a measurement data in the Recyclerview step by step
+     */
     @Test
     public void test2add(){
         SystemClock.sleep(5000);
@@ -71,7 +79,9 @@ public class MainActivityTest {
         onView(withId(R.id.measurement)).check(matches(isDisplayed()));
 
     }
-
+    /**
+     * Checks the User Interface and all the functionalities required to Update a measurement data from the Recyclerview step by step
+     */
     @Test
     public void test3update(){
         SystemClock.sleep(5000);
@@ -92,6 +102,9 @@ public class MainActivityTest {
         onView(withId(R.id.button_edit)).perform(click());
         SystemClock.sleep(3000);
     }
+    /**
+     * Checks the User Interface and all the functionalities required to Delete a measurement data from the Recyclerview step by step
+     */
     @Test
     public void test4delete(){
         SystemClock.sleep(5000);
